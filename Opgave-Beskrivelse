@@ -1,0 +1,76 @@
+1. hvilke partials skal du bruge?
+
+    1. partial skal indeholde:
+    Farvepaletten
+
+    2. partial skal indeholde:
+    Logoerne
+
+    3. partial skal indeholde:
+    Typografien
+
+
+
+
+2. Hvad skal dine partials indeholde (eks. mixins, variabler)?
+
+Farvepaletten skal indeholde variabler som man nemt kan kalde.
+Den partial vil jeg nok kalde _colors
+Jeg vil oprette variabler ifølge det color breakdown som er blevet givet i vores brandPoster
+Jeg vil starte med de vigtige primære farver
+
+$white
+$coolGray
+$crossRed
+$black
+
+Derefter vil jeg oprette de forskellige neutrale farver
+
+$lightGray
+$medGray
+
+og til sidst vil jeg oprette de sekundære farver.
+
+$khaki
+$sand
+$gold
+$safetyGreen
+$forestGreen
+$lightBlue
+$skyBlue
+$classicBlue
+$midnightBlue
+$deepRed
+
+
+
+logoerne kan være mixins hvis man gerne vil kalde et logo et specifikt sted i sin kode og variabler for at kunne ændre deres udseende
+Jeg vil nok starte med at lave 3 mixins per logo familie
+@mixin buttonClassicCompact
+@mixin buttonClassicExpanded
+@mixin buttonClassicTextUnder
+
+Her kan jeg kalde de 3 forskellige button classic styles af logoet, en hvor teksten er tæt på logoet og er lidt kompakt, en hvor teksten står lidt mere ude og til sidst der hvor at teksten er under logoet
+
+og de resterende 6 styles
+
+@mixin classicCompact
+@mixin classicExpanded
+@mixin classicTextUnder
+
+
+@mixin discCompact
+@mixin discExpanded
+@mixin discTextUnder
+
+Man kan oprette forskellige størrelser og styligns i ens varabler som man kan tilføje til sine logoer - men jeg er ikke 100% sikker på hvordan det vil komme til at fungere indtil jeg har arbejdet med det.
+
+
+
+Typografien skal indeholde variabler og mixins så man nemt kan kalde de forskellige tekst styles man skal bruge.
+
+Variablerne kan bestå af de forskellige vægte hvis man gerne vil have noget specfikt fremfor de værdier som allerede ligger i CSS
+$regular
+$bold
+
+samt import af fonts.
