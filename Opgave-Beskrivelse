@@ -74,3 +74,33 @@ $regular
 $bold
 
 samt import af fonts.
+
+
+
+
+
+3. Du skal se siden igennem, og vurdere om der er elementer der kan styles ens, eller dele af elementer der kan styles ens.
+
+
+4. Du skal beskrive hvilke partials du får brugfor, og hvad disse partilas skal indeholde. eks. mixins, variabler og pseude CSS
+
+
+
+
+- En flex partial kan bruges med
+
+2 mixin som kontrollere hvor indholdet skal ligge i sektionen
+Generelt ligger vores content til højre eller venstre i hvert 'kort' man kunne oprette en mixin til vores parent containers om hvorvidt dets content skal flexe til højre eller om det skal flexe til venstre
+
+
+1 mixin til en parent for at ligge kort eller logoer vandret på siden
+
+
+- en partial til knappers på sitet
+1 mixin til styling a knapper
+Knapperne er generelt røde, med hvid tekst og samme højdre - den eneste forskel som  man kan se vil være længden af knapperne som kan ændres i individuelt
+
+- en font partial
+1 mixin som styrer styling af fonts
+den hvide font med titel og lille paragraf går igen 2 gange.
+
