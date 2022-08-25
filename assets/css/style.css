@@ -113,7 +113,6 @@ body {
   color: #FFFFFF;
   font-size: 1vw;
   border: none;
-  background: none;
   font-weight: bold;
   padding: 0.5%;
   background-color: #ed1d2e;
@@ -121,9 +120,6 @@ body {
   position: absolute;
   bottom: 20%;
   left: 2%;
-}
-.contentWhite button button:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.177) 0 0);
 }
 
 .contentBlack h2, .contentBlack p {
@@ -150,15 +146,11 @@ body {
   color: #FFFFFF;
   font-size: 1vw;
   border: none;
-  background: none;
   font-weight: bold;
   padding: 0.5%;
   background-color: #ed1d2e;
   border-radius: 5px;
   padding: 2.7%;
-}
-.contentBlack button button:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.177) 0 0);
 }
 
 .zipButton {
@@ -167,4 +159,8 @@ body {
   left: 2%;
   display: flex;
   gap: 3%;
+}
+
+button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1764705882) 0 0);
 }/*# sourceMappingURL=style.css.map */
