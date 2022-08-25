@@ -96,9 +96,11 @@ Generelt ligger vores content til højre eller venstre i hvert 'kort' man kunne 
 1 mixin til en parent for at ligge kort eller logoer vandret på siden
 
 
-- en partial til knappers på sitet
+- en partial til elementerne på siden.
 1 mixin til styling a knapper
 Knapperne er generelt røde, med hvid tekst og samme højdre - den eneste forskel som  man kan se vil være længden af knapperne som kan ændres i individuelt
+
+1 mixin til styling af lists
 
 - en font partial
 1 mixin som styrer styling af fonts

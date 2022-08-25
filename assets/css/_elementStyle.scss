@@ -1,0 +1,42 @@
+//List reset
+@use "colors" as c;
+@use "font" as f;
+
+@mixin listReset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin navbar {
+    ul{
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@mixin buttonStyle {
+        color: c.$white;
+        font-size: f.$regFont;
+        border: none;
+        background: none;
+        font-weight: bold;
+        padding: 0.5%;
+        background-color: c.$crossRed;
+        border-radius: 5px;
+    button:hover{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.177) 0 0);
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}

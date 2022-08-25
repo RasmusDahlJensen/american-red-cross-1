@@ -1,0 +1,150 @@
+@use "colors" as c;
+@use "font" as f;
+@use "flex";
+@use "elementStyle";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+//Navbar
+li{
+    @include elementStyle.listReset;
+}
+
+.nav1{
+    @include elementStyle.navbar;
+    background-color: c.$navGray;
+    padding: 0 20% 0 20%;
+    margin-bottom: 0.1%;
+
+        ul{
+            justify-content: flex-end;
+                li{
+                    font-size: f.$smallFont;
+                }
+        }
+}
+
+.nav2{
+    @include elementStyle.navbar;
+    background-color: c.$navGray;
+    box-shadow: 10px 5px 5px #00000025;
+        ul{
+            justify-content: center;
+            gap: 3%;
+            
+                li{
+                    font-size: f.$regFont;
+                    color: c.$coolGray;
+                    font-weight: bold;
+                }
+        }
+        img{
+            width: 8rem;
+        }
+        figure{
+            margin: 10px;
+        }
+}
+
+.redText{
+    color: c.$crossRed;
+}
+
+.whiteBG{
+    background-color: c.$white;
+}
+// .material-symbols-outlined{
+//     font-weight: f.$biggerFont;
+// }  
+
+
+//Main content
+
+#mainContainer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+body{
+    background-color: c.$lightGray;
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundImg{
+    position: relative;
+    margin-bottom: 0.5%;
+
+        img{
+            max-width: 100%;
+        }
+}
+
+.contentWhite{
+    h2, p{
+        margin: 0;
+        color: c.$white;
+        width: 500px;
+    }
+    h2{
+        font-size: f.$biggestFont;
+        font-weight: 700;
+        position: absolute;
+        bottom: 50%;
+        left: 2%;
+    }
+    p{
+        font-size: f.$bigFont;
+        font-weight: lighter;
+        position: absolute;
+        bottom: 35%;
+        left: 2%;
+    }
+    button{
+        width: 180px;
+        @include elementStyle.buttonStyle;
+        position: absolute;
+        bottom: 20%;
+        left: 2%;
+        
+    }
+}
+
+.contentBlack{
+    h2, p{
+        margin: 0;
+        color: c.$black;
+        width: 500px;
+    }
+    h2{
+        font-size: f.$biggestFont;
+        font-weight: 700;
+        position: absolute;
+        bottom: 60%;
+        left: 2%;
+    }
+    p{
+        font-size: f.$regFont;
+        font-weight: lighter;
+        position: absolute;
+        bottom: 40%;
+        left: 2%;
+    }
+    button{
+        width: 260px;
+        @include elementStyle.buttonStyle;
+        padding: 2.7%;
+        
+    }
+}
+
+.zipButton{
+    position: absolute;
+    bottom: 20%;
+    left: 2%;
+    display: flex;
+    gap: 3%;
+}
+
